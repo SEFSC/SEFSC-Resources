@@ -1,6 +1,6 @@
 # RESOURCES FOR SEFSC GITHUB USERS 
 
-Welcome to the SEFSC GITHUB! This is a space to store living documents and information related to facilitating effective GitHub workflows at the SEFSC. 
+Welcome to the SEFSC GitHub! Here we will store living documents and information related to facilitating effective GitHub workflows at the SEFSC. 
 
 # NEW USERS 
 
