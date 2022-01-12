@@ -1,5 +1,5 @@
 ---
-title: "ROracle"
+title: "Installing ROracle"
 author: "James Primrose - SEFSC OMI Data Management"
 date: "2021-12-02"
 output: html_document
@@ -24,16 +24,16 @@ Install MS Visual C++ Redist
 Reboot computer three times (Reboot is not optional)
 ```
 #### 2) [As Admin] modify environment variables
-##### NOTE: Admin not needed beyond this point. "Dishes are done, man"
+
 ```
 Click on Start button and type: "Advanced System Settings"
 Click on Environment Variables (lower right)
 System Variables (lower section) click on New...
 Variable Name: ORACLE_HOME
 Variable Value: C:\Oracle\instantclient_19_11
-"Apply and let dry"
 ```
 #### 3) [As non-admin / user] Launch R-Studio and write environ file
+##### NOTE: Admin not needed beyond this point.
 ##### NOTE: Should result in a .Renviron file in C:\\Users\\%username%\\Documents\\.Renviron
 ```
 write('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', file = "~/.Renviron", append = TRUE)
