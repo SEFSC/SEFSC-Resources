@@ -23,7 +23,7 @@ flowchart LR
       direction LR
       DB1[(Oracle)] -...->|data.analyst| RC1[["summaryRCode.R"]];
       DB1[(Oracle)] -...->|data.loctran| RC1[["summaryRCode.R"]];
-      RC2[[jump0.R]]-...-> RC1[["summaryRCode.R"]];
+      RC2[[sourceFile.R]]-...-> RC1[["summaryRCode.R"]];
       RC1[["summaryRCode.R"]] ---> OF1[outputYYYY.csv];
       RC1[["summaryRCode.R"]] ---> OF2[outputYYYY.dat];
     end
