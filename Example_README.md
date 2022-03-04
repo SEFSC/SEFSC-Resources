@@ -36,7 +36,8 @@ flowchart LR
 ```
 
 
-# Directory Structure Example: (Your project directory don't need to look like this)
+# Directory Structure Example: 
+### (Your project directory don't need to look like this)
 <pre>
 Project
    ├── base                  # base for code
