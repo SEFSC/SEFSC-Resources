@@ -16,14 +16,15 @@ MS Visual C++ Redist: https://drive.google.com/file/d/1taRdxpT2esz70REUKkfER76NK
 rtools40: https://drive.google.com/file/d/16TxReyVFq0cU34lMMZRdR_mnWhPix6Mn/view?usp=sharing
 ic1911.zip: https://drive.google.com/file/d/1J7ZT_slfAz0cxEevvYFT2NgXRcCLn6eM/view?usp=sharing
 ```
-#### 1) [As Admin] install files from above (in this order)
+#### 1) [As Admin] remove all previous Oracle installation folders. 
+#### 2) [AS Admin] install files from above (in this order)
 ```
 Unzip ic1911.zip to C:\  [Should result in C:\Oracle\instantclient_19_11 ]
 Install rtools40
 Install MS Visual C++ Redist
 Reboot computer three times (Reboot is not optional)
 ```
-#### 2) [As Admin] modify environment variables
+#### 3) [As Admin] modify environment variables
 
 ```
 Click on Start button and type: "Advanced System Settings"
@@ -32,27 +33,27 @@ System Variables (lower section) click on New...
 Variable Name: ORACLE_HOME
 Variable Value: C:\Oracle\instantclient_19_11
 ```
-#### 3) [As non-admin / user] Launch R-Studio and write environ file
+#### 4) [As non-admin / user] Launch R-Studio and write environ file
 ##### NOTE: Admin not needed beyond this point.
 ##### NOTE: Should result in a .Renviron file in C:\\Users\\%username%\\Documents\\.Renviron
 ```
 write('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', file = "~/.Renviron", append = TRUE)
 ```
-#### 4) Verify environment file in R-Studio
+#### 5) Verify environment file in R-Studio
 ##### NOTE: Should return the path of the make.exe in the RTOOLS40 home: "C:\\\\rtools40\\\\usr\\\\bin\\\\make.exe"
 ```
 Sys.which("make")
 ```
-#### 5) Confirm again and install jsonlite from source inside R-Studio
+#### 6) Confirm again and install jsonlite from source inside R-Studio
 ```
 install.packages("jsonlite", type = "source")
 ```
-#### 6) Install DBI and ROracle from source inside R-Studio
+#### 7) Install DBI and ROracle from source inside R-Studio
 ```
 install.packages("DBI")
 install.pacakges("ROracle")
 ```
-#### 7) Set env and test connection to Oracle in R-Studio
+#### 8) Set env and test connection to Oracle in R-Studio
 ##### NOTE: Replace Oracle_username, Oracle_password & test_table with real values
 ```
 Sys.setenv(
