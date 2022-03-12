@@ -22,7 +22,7 @@ Install 19c_11 Instant Client:
 https://drive.google.com/file/d/1J7ZT_slfAz0cxEevvYFT2NgXRcCLn6eM/view?usp=sharing
 ```
 #### 1) [As Admin] remove all previous Oracle installation folders. 
-#### 2) [AS Admin] install files from above (in this order)
+#### 2) [As Admin] install files from above (in this order)
 ```
 Unzip ic1911.zip to C:\  [Should result in C:\Oracle\instantclient_19_11 ]
 Install rtools40
