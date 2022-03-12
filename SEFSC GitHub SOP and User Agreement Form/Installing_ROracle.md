@@ -12,8 +12,13 @@ SEFSC Oracle Account (Contact james.primrose@noaa.gov for an account)
 ```
 #### Prep downloads:
 ```
-MS Visual C++ Redist: https://drive.google.com/file/d/1taRdxpT2esz70REUKkfER76NKwJi-t11/view?usp=sharing
-rtools40: https://drive.google.com/file/d/16TxReyVFq0cU34lMMZRdR_mnWhPix6Mn/view?usp=sharing
+Install MS Visual C++ Redist: 
+https://drive.google.com/file/d/1taRdxpT2esz70REUKkfER76NKwJi-t11/view?usp=sharing
+
+Install RTools 4.0: 
+https://drive.google.com/file/d/16TxReyVFq0cU34lMMZRdR_mnWhPix6Mn/view?usp=sharing
+
+Install 19c_11 "Instant Client"
 ic1911.zip: https://drive.google.com/file/d/1J7ZT_slfAz0cxEevvYFT2NgXRcCLn6eM/view?usp=sharing
 ```
 #### 1) [As Admin] remove all previous Oracle installation folders. 
