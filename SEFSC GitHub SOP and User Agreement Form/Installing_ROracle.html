@@ -9,10 +9,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="James Primrose - OMI Data Management" />
+<meta name="author" content="James Primrose - SEFSC OMI Data Management" />
 
+<meta name="date" content="2021-12-02" />
 
-<title>R, SAS, DBI and ROracle</title>
+<title>Installing ROracle</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -362,267 +363,95 @@ pre code {
 
 
 
-<h1 class="title toc-ignore">R, SAS, DBI and ROracle</h1>
-<h4 class="author">James Primrose - OMI Data Management</h4>
-<h4 class="date">6/27/2022</h4>
+<h1 class="title toc-ignore">Installing ROracle</h1>
+<h4 class="author">James Primrose - SEFSC OMI Data Management</h4>
+<h4 class="date">2021-12-02</h4>
 
 </div>
 
 
-<div id="note-while-this-document-is-mostly-about-r-and-roracle-the-32-bit-oracle-client-is-required-for-sas-and-the-steps-to-install-that-are-in-here-also" class="section level5">
-<h5><strong>NOTE:</strong> While this document is mostly about R and
-ROracle, the 32 bit Oracle client is required for SAS and the steps to
-install that are in here also</h5>
+<div id="prereq" class="section level4">
+<h4>Prereq:</h4>
+<pre><code>R-Studio 2021.09.1 Build 372 or greater
+R-Core 4.1 or greater (tested on 4.1.2 &quot;Bird Hippie&quot;)
+SEFSC Oracle Account (Contact james.primrose@noaa.gov for an account)</code></pre>
 </div>
-<div id="r-steps-needed-for-r" class="section level5">
-<h5>[R] Steps needed for R</h5>
-</div>
-<div id="sas-steps-needed-for-sas" class="section level5">
-<h5>[SAS] Steps needed for SAS</h5>
-</div>
-<div id="prerequisites" class="section level4">
-<h4>Prerequisites:</h4>
-<div id="note-it-is-strongly-recommended-that-you-update-r-core-r-studio-and-rtools-to-the-latest-versions." class="section level5">
-<h5><strong>NOTE:</strong> It is strongly recommended that you update
-R-Core, R-Studio and Rtools to the <em>latest</em> versions.</h5>
-</div>
-<div id="note-be-very-aware-of-the-version-of-r-core-you-have-installed.-the-version-of-rtools-youll-need-depends-on-which-version-of-r-core-you-have-installed." class="section level5">
-<h5><strong>NOTE:</strong> Be very aware of the version of R-Core you
-have installed. The version of Rtools you’ll need depends on which
-version of R-Core you have installed.</h5>
-<pre><code>You&#39;ll need:
-1) R-Studio 2021.09.01 Build 372 or greater
-2) R-Core 4.0 or greater (tested on 4.1.2 &quot;Bird Hippie&quot;)
-3) SEFSC Oracle Account (contact james.primrose@noaa.gov for an account)
-Optional: 
-4) SAS 9+ 32 bit</code></pre>
-</div>
-</div>
-<div id="downloads" class="section level4">
-<h4>Downloads:</h4>
-<div id="note-youll-need-to-be-on-vpn-to-download-the-oracle-instant-client-.zip-file." class="section level5">
-<h5><strong>NOTE:</strong> You’ll need to be on VPN to download the
-Oracle Instant Client .zip file.</h5>
-</div>
-<div id="oracle-instant-client-sas-r-httpsoftwaresoftwaresecgs-radmb.nmfs.localsoftwareicpkg.zip" class="section level5">
-<h5><strong>Oracle Instant Client: [SAS &amp; R]</strong> <a href="http://software:software@secgs-radmb.nmfs.local/software/ICPKG.zip" class="uri">http://software:software@secgs-radmb.nmfs.local/software/ICPKG.zip</a></h5>
-</div>
-<div id="ms-visual-c-redist-sas-r-httpdrive.google.comfiled1tardxpt2esz70reukkfer76nkwji-t11viewuspsharing" class="section level5">
-<h5><strong>MS Visual C++ Redist: [SAS &amp; R]</strong> <a href="http://drive.google.com/file/d/1taRdxpT2esz70REUKkfER76NKwJi-t11/view?usp=sharing" class="uri">http://drive.google.com/file/d/1taRdxpT2esz70REUKkfER76NKwJi-t11/view?usp=sharing</a></h5>
-</div>
-<div id="alt.-www-site---ms-visual-c-redist-2017-sas-r-httpsdocs.microsoft.comen-uscppwindowslatest-supported-vc-redist" class="section level5">
-<h5><strong>ALT. www site - MS Visual C++ Redist (2017+): [SAS &amp;
-R]</strong> <a href="https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist" class="uri">https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist</a></h5>
-</div>
-<div id="rtools40-r-httpsdrive.google.comfiled16txreyvfq0cu3flmmzrdr_mnwhpix6mnviewuspsharing" class="section level5">
-<h5><strong>rtools40: [R]</strong> <a href="https://drive.google.com/file/d/16TxReyVFq0cU3flMMZRdR_mnWhPix6Mn/view?usp=sharing" class="uri">https://drive.google.com/file/d/16TxReyVFq0cU3flMMZRdR_mnWhPix6Mn/view?usp=sharing</a></h5>
-</div>
-<div id="alt.-www-site---rtools40-rtools42-r-httpscran.r-project.orgbinwindowsrtools" class="section level5">
-<h5><strong>ALT. www site - rtools40 &amp; rtools42: [R]</strong> <a href="https://cran.r-project.org/bin/windows/Rtools/" class="uri">https://cran.r-project.org/bin/windows/Rtools/</a></h5>
-</div>
-</div>
-<div id="sas-r-as-admin-install-files-from-above-in-this-order" class="section level3">
-<h3>1) [SAS &amp; R] [AS ADMIN] install files from above (in this
-order)</h3>
-<pre><code>1) [SAS &amp; R] Extract ICPKG.zip to C:\Oracle 
-[Should result in C:\Oracle\intantclient and C:\Oracle\instantclient32]
+<div id="prep-downloads" class="section level4">
+<h4>Prep downloads:</h4>
+<pre><code>Install MS Visual C++ Redist: 
+https://drive.google.com/file/d/1taRdxpT2esz70REUKkfER76NKwJi-t11/view?usp=sharing
 
-2) [R] Install rtools40 (or rtools42 depending on which version of RStudio you have)
+Install RTools 4.0: 
+https://drive.google.com/file/d/16TxReyVFq0cU34lMMZRdR_mnWhPix6Mn/view?usp=sharing
 
-2b) [R] Copy C:\Oracle\instantclient\sdk\include\ociver.h to C:\Program Files\R\R-4.x.x\include\ociver.h
-NOTE: Be careful to copy this ociver.h file into the version of R you&#39;re using (there may be many versions installed in C:\Program Files\R\)
-
-3) [SAS &amp; R] Install MS Visual C++ Redist
-
-4) [SAS &amp; R] Reboot computer three times</code></pre>
+Install 19c_11 Instant Client:
+https://drive.google.com/file/d/1J7ZT_slfAz0cxEevvYFT2NgXRcCLn6eM/view?usp=sharing</code></pre>
 </div>
-<div id="sas-r-as-admin-modify-environment-variables-and-create-symbolic-links" class="section level3">
-<h3>2) [SAS &amp; R] [AS ADMIN] modify environment variables and create
-symbolic links</h3>
-<div id="note-youll-need-to-create-2-new-environment-variables-and-edit-one-so-keep-this-screen-open-until-youre-done-with-step-2c" class="section level5">
-<h5><strong>NOTE:</strong> You’ll need to create 2 new environment
-variables and edit one, so keep this screen open until you’re done with
-step 2c</h5>
+<div id="as-admin-remove-all-previous-oracle-installation-folders." class="section level4">
+<h4>1) [As Admin] remove all previous Oracle installation folders.</h4>
 </div>
-<div id="a-oracle_home" class="section level5">
-<h5>2a) ORACLE_HOME</h5>
-<pre><code>A) Start -&gt; Type &quot;Advanced System Settings&quot;
-*or*
-A) Start -&gt; Settings
-B)About -&gt; Advanced System Settings (right side)
-C) Click on Environment Variables (lower right)
-D) System Variables (lower section) click on NEW
-  Variable Name: ORACLE_HOME
-  Variable Value: C:\Windows\System32\oracle</code></pre>
+<div id="as-admin-install-files-from-above-in-this-order" class="section level4">
+<h4>2) [As Admin] install files from above (in this order)</h4>
+<pre><code>Unzip ic1911.zip to C:\  [Should result in C:\Oracle\instantclient_19_11 ]
+Install rtools40
+Install MS Visual C++ Redist
+Reboot computer three times (Reboot is not optional)</code></pre>
 </div>
-<div id="b-tns_admin" class="section level5">
-<h5>2b) TNS_ADMIN</h5>
-<pre><code>D) System Variables (lower section) click on NEW
-  Variable Name: TNS_ADMIN
-  Variable Value: %ORACLE_HOME%\network\admin</code></pre>
+<div id="as-admin-modify-environment-variables" class="section level4">
+<h4>3) [As Admin] modify environment variables</h4>
+<pre><code>Click on Start button and type: &quot;Advanced System Settings&quot;
+Click on Environment Variables (lower right)
+System Variables (lower section) click on New...
+Variable Name: ORACLE_HOME
+Variable Value: C:\Oracle\instantclient_19_11</code></pre>
 </div>
-<div id="c-path" class="section level5">
-<h5>2c) Path</h5>
-<pre><code>D) In the System Variables (lower section) click on Path and EDIT
-E) Edit the &quot;Path&quot; system variable. 
-E1) Remove anything you see here relating to Oracle
-E2) NEW: C:\Oracle\instantclient32
-E3) NEW: C:\Oracle\instantclient</code></pre>
+<div id="as-non-admin-user-launch-r-studio-and-write-environ-file" class="section level4">
+<h4>4) [As non-admin / user] Launch R-Studio and write environ file</h4>
+<div id="note-admin-not-needed-beyond-this-point." class="section level5">
+<h5>NOTE: Admin not needed beyond this point.</h5>
 </div>
-<div id="d-symbolic-links" class="section level5">
-<h5>2d) Symbolic Links</h5>
-<pre><code>Open Command Prompt (CMD) as Administrator and issue the following commands to make symoblic links:
-
-mklink /j c:\windows\system32\oracle C:\Oracle\instantclient
-mklink /j c:\windows\sysWOW64\oracle c:\Oracle\instantclient32</code></pre>
+<div id="note-should-result-in-a-.renviron-file-in-cusersusernamedocuments.renviron" class="section level5">
+<h5>NOTE: Should result in a .Renviron file in
+C:\Users\%username%\Documents\.Renviron</h5>
+<pre><code>write(&#39;PATH=&quot;${RTOOLS40_HOME}\\usr\\bin;${PATH}&quot;&#39;, file = &quot;~/.Renviron&quot;, append = TRUE)</code></pre>
 </div>
 </div>
-<div id="sas-r-verify-sqlplus-and-path-settings" class="section level3">
-<h3>3) [SAS &amp; R] Verify SQLplus and path settings</h3>
-<div id="a-verify-sqlplus" class="section level5">
-<h5>3a) Verify SQLPlus</h5>
-<pre><code>Open Command Prompt (CMD) and type: sqlplus
-
-You should see something like:
-
-SQL*Plus: Release 19.0.0.0.0 - Production on Tue Jun 7 12:04:55 2022
-Version 19.11.0.0.0
-
-Copyright (c) 1982, 2020, Oracle.  All rights reserved.
-
-Enter user-name:
-
-You don&#39;t need to login, just close the CMD window or type CTRL+C</code></pre>
-</div>
-<div id="b-verify-path" class="section level5">
-<h5>3b) Verify Path</h5>
-<div id="verify-oracle_home-exists" class="section level6">
-<h6>Verify ORACLE_HOME exists</h6>
-</div>
-<div id="verify-oracle_home-set-to-cwindowssystem32oracle" class="section level6">
-<h6>Verify ORACLE_HOME set to
-<strong>C:\Windows\System32\oracle</strong></h6>
-</div>
-<div id="verify-tns_admin-exists" class="section level6">
-<h6>Verify TNS_ADMIN exists</h6>
-</div>
-<div id="verify-tns_admin-set-to-cwindowssystem32oraclenetworkadmin" class="section level6">
-<h6>Verify TNS_ADMIN set to
-<strong>C:\Windows\System32\oracle\network\admin</strong></h6>
-</div>
-<div id="verify-path-includes-coracleinstantclient" class="section level6">
-<h6>Verify Path includes <strong>C:\Oracle\instantclient</strong></h6>
-</div>
-<div id="verify-path-includes-coracleinstantclient32" class="section level6">
-<h6>Verify Path includes <strong>C:\Oracle\instantclient32</strong></h6>
-<pre><code>Open Command Prompt (CMD) and type: set
-Verify: 
-1) ORACLE_HOME path variable exists and is pointing to C:\Windows\System32\oracle
-2) Path variable exists (it will be a long string of paths) and includes both C:\Oracle\instantclient and also C:\Oracle\instantclient32
-3) Either: depends on which version of R-core is installed: 
-R-core &lt;= 4.2 will need Rtools40
-R-core &gt;= 4.2 will need Rtools42
-  A) RTOOLS40_HOME path variable exists and is set to C:\rtools40
-  B) RTOOLS42_HOME path variable exists and is set to C:\rtools42</code></pre>
-</div>
-</div>
-</div>
-<div id="r-launch-r-studio-and-write-environ-file" class="section level3">
-<h3>4) [R] Launch R-Studio and write environ file</h3>
-<div id="note-localadmin-no-longer-needed." class="section level5">
-<h5><strong>NOTE:</strong> localadmin no longer needed.</h5>
-</div>
-<div id="depending-on-which-version-of-rtools-are-installed-either" class="section level5">
-<h5>Depending on which version of Rtools are installed either:</h5>
-<pre><code>write(&#39;PATH=&quot;${RTOOLS40_HOME}\\usr\\bin;${PATH}&quot;&#39;, file = &quot;~/.Renviron&quot;, append = TRUE)
-*or*
-write(&#39;PATH=&quot;${RTOOLS42_HOME}\\usr\\bin;${PATH}&quot;&#39;, file = &quot;~/.Renviron&quot;, append = TRUE)</code></pre>
-</div>
-</div>
-<div id="r-verify-rtools-install-in-rstudio" class="section level3">
-<h3>5) [R] Verify Rtools install in RStudio</h3>
-<div id="open-r-studio-and-enter-the-following" class="section level5">
-<h5>Open R-Studio and enter the following:</h5>
+<div id="verify-environment-file-in-r-studio" class="section level4">
+<h4>5) Verify environment file in R-Studio</h4>
+<div id="note-should-return-the-path-of-the-make.exe-in-the-rtools40-home-crtools40usrbinmake.exe" class="section level5">
+<h5>NOTE: Should return the path of the make.exe in the RTOOLS40 home:
+“C:\\rtools40\\usr\\bin\\make.exe”</h5>
 <pre><code>Sys.which(&quot;make&quot;)</code></pre>
-<div id="should-return-path-of-rtools-set-in-step-3b" class="section level6">
-<h6>Should return path of RTOOLS set in Step 3b</h6>
-</div>
-<div id="either" class="section level6">
-<h6>Either:</h6>
-</div>
-<div id="crtools40usrbinmake.exe" class="section level6">
-<h6>“C:\\rtools40\\usr\\bin\\make.exe”</h6>
-</div>
-<div id="crtools42usrbinmake.exe" class="section level6">
-<h6>“C:\\rtools42\\usr\\bin\\make.exe”</h6>
 </div>
 </div>
+<div id="confirm-again-and-install-jsonlite-from-source-inside-r-studio" class="section level4">
+<h4>6) Confirm again and install jsonlite from source inside
+R-Studio</h4>
+<pre><code>install.packages(&quot;jsonlite&quot;, type = &quot;source&quot;)</code></pre>
 </div>
-<div id="r-install-dbi-and-roracle-in-r-studio" class="section level3">
-<h3>6) [R] Install DBI and ROracle in R-Studio</h3>
-<div id="launch-r-studio-and-run-the-following" class="section level5">
-<h5>Launch R-Studio and run the following:</h5>
+<div id="install-dbi-and-roracle-from-source-inside-r-studio" class="section level4">
+<h4>7) Install DBI and ROracle from source inside R-Studio</h4>
+<pre><code>install.packages(&quot;DBI&quot;)
+install.pacakges(&quot;ROracle&quot;)</code></pre>
+</div>
+<div id="set-env-and-test-connection-to-oracle-in-r-studio" class="section level4">
+<h4>8) Set env and test connection to Oracle in R-Studio</h4>
+<div id="note-replace-oracle_username-oracle_password-test_table-with-real-values" class="section level5">
+<h5>NOTE: Replace Oracle_username, Oracle_password &amp; test_table with
+real values</h5>
 <pre><code>Sys.setenv(
-  &#39;ORACLE_HOME&#39; = &#39;C:/Oracle/instantclient/&#39;,
-  &#39;OCI_INC&#39;     = &#39;C:/Oracle/instantclient/sdk/include&#39;,
-  &#39;OCI_LIB64&#39;   = &#39;C:/Oracle/instantclient/&#39;
-)</code></pre>
-<div id="and-then" class="section level6">
-<h6>and then</h6>
-<pre><code>install.packages(&quot;DBI&quot;)</code></pre>
-</div>
-<div id="and-then-1" class="section level6">
-<h6>and then</h6>
-<pre><code>install.packages(&quot;ROracle&quot;)</code></pre>
-</div>
-</div>
-<div id="note-roracle-install-will-pop-up-a-window-to-ask-if-youd-like-to-compile-from-source.-yes-you-do." class="section level5">
-<h5><strong>NOTE:</strong> ROracle install will pop-up a window to ask
-if you’d like to compile from source. Yes, you do.</h5>
-</div>
-<div id="note-this-is-where-most-errors-will-occur.-if-you-run-into-an-error-here-please-carefully-copy-it-down-and-email-the-error-to-james.primrosenoaa.gov" class="section level5">
-<h5><strong>NOTE:</strong> This is where most errors will occur. If you
-run into an error here, please carefully copy it down and email the
-error to: <a href="mailto:james.primrose@noaa.gov" class="email">james.primrose@noaa.gov</a></h5>
-</div>
-</div>
-<div id="r-test-roracle-connection-in-r-studio" class="section level3">
-<h3>7) [R] Test ROracle connection in R-Studio</h3>
-<div id="if-everything-above-is-completed-and-all-your-testing-works-you-can-now-test-using-the-following-code-in-r-studio.-the-user-and-password-here-are-a-read-only-account-on-secpr-that-has-some-dummy-tables-we-can-use-to-test-these-connections." class="section level5">
-<h5>If everything above is completed and all your testing works, you can
-now test using the following code in R-Studio. The user and password
-here are a read-only account on SECPR that has some dummy tables we can
-use to test these connections.</h5>
-</div>
-<div id="note-here-you-can-see-the-user-and-pass-are-in-plain-text.-youd-not-want-to-do-this-with-production-code." class="section level5">
-<h5><strong>NOTE:</strong> Here you can see the user and pass are in
-plain text. You’d not want to do this with production code.</h5>
-<pre><code>Sys.setenv(
-  &#39;ORACLE_HOME&#39; = &#39;C:/Oracle/instantclient/&#39;,
-  &#39;OCI_INC&#39;     = &#39;C:/Oracle/instantclient/sdk/include&#39;,
-  &#39;OCI_LIB64&#39;   = &#39;C:/Oracle/instantclient/&#39;
+  &#39;ORACLE_HOME&#39; = &#39;C:/Oracle/instantclient_19_11/&#39;,
+  &#39;OCI_INC&#39;     = &#39;C:/Oracle/instantclient_19_11/sdk/include&#39;,
+  &#39;OCI_LIB64&#39;   = &#39;C:/Oracle/instantclient_19_11/&#39;
 )
 
+un &lt;- Oracle_username
+pw &lt;- Oracle_password
 library(ROracle)
-
-un &lt;- &quot;rotest&quot;
-pw &lt;- &quot;rotest&quot;
 drv &lt;- dbDriver(&quot;Oracle&quot;)
 con &lt;- dbConnect(drv, un, pw, dbname = &quot;SECPR&quot;)
-dbGetQuery(con,&quot;select * from employees&quot;)
+dbGetQuery(con,&quot;select count(*) from test_table&quot;)
 dbDisconnect(con)</code></pre>
-</div>
-</div>
-<div id="sas-test-sas" class="section level3">
-<h3>8) [SAS] Test SAS</h3>
-<div id="this-section-could-use-some-better-proc-sql-examples" class="section level5">
-<h5>This section could use some better proc sql examples</h5>
-<pre><code>proc sql;
- connect to oracle ( user=rotest orapw=rotest path=&quot;@SECPR&quot;);
- create table libref.dataset_name as select * from connection to
- oracle ( select * from employees );
-disconnect from oracle;
-quit;</code></pre>
 </div>
 </div>
 
