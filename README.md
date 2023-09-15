@@ -2,6 +2,9 @@
 
 Welcome to the SEFSC GitHub! Here we will store living documents and information related to facilitating effective GitHub workflows at the SEFSC. 
 
+Please see the [NMFS Open Science Organization](https://github.com/nmfs-opensci) for additional resources and follow the [NMFS-wide GitHub and Git Best Practices](https://nmfs-opensci.github.io/GitHub-Guide/).
+
+
 # NEW USERS 
 
 Remember to review the [SEFSC GitHub SOP](https://github.com/AdyanRios-NOAA/SEFSC-Resources/blob/18a6c7e98b3e9b71f5e5912282d9d7f08c0e0a1a/SEFSC%20GitHub%20SOP%20and%20User%20Agreement%20Form/SEFSC%20Github%20SOP%20-%20RR%20-%20LON%20-%20BGM.pdf), create a GitHub account, and fill out and return the [SEFSC GitHub user agreements](https://github.com/AdyanRios-NOAA/SEFSC-Resources/blob/18a6c7e98b3e9b71f5e5912282d9d7f08c0e0a1a/SEFSC%20GitHub%20SOP%20and%20User%20Agreement%20Form/SEFSC_GitHub_User_Agreement.pdf) form to the SEFSC Helpdesk, nmfs.sefsc.helpdesk@noaa.gov. 
