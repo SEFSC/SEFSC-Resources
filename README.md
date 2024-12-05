@@ -8,7 +8,7 @@ Remember to review the [SEFSC GitHub SOP](https://github.com/SEFSC/SEFSC-Resourc
 
 ## GITHUB GOVERNANCE TEAM
 
-The [GitHub Governance Team (GGT)](https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/home) was established in 2023 to ensure appropriate governance for the NOAA Fisheries GitHub Enterprise Cloud. The GGT includes end-user and IT representatives from all Fiscal Management Centers (FMCs) who are using or planning on using the NOAA Fisheries GitHub Enterprise Cloud. The SEFSC end-user representative is [Lisa Ailloud](lisa.ailloud@noaa.gov) (Sarina Atkinson filling in January 2025-April 2025) and the IT representative is Shirley Kasser. 
+The [GitHub Governance Team (GGT)](https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/home) was established in 2023 to ensure appropriate governance for the NOAA Fisheries GitHub Enterprise Cloud. The GGT includes end-user and IT representatives from all Fiscal Management Centers (FMCs) who are using or planning on using the NOAA Fisheries GitHub Enterprise Cloud. The SEFSC end-user representative is Lisa Ailloud (lisa.ailloud@noaa.gov) (Sarina Atkinson will be filling in for Lisa Ailloud January 2025-April 2025) and the IT representative is Shirley Kasser (shirley.kasser@noaa.gov). 
 
 Please refer to the [NMFS GitHub Governance Team website](https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/home) for information on access to GitHub Enterprise Cloud and [training materials](https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/training).
 
