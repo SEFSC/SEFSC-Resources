@@ -2,12 +2,15 @@
 
 Welcome to the SEFSC GitHub! Here we will store living documents and information related to facilitating effective GitHub workflows at the SEFSC. 
 
-Please see the [NMFS Open Science Organization](https://github.com/nmfs-opensci) for additional resources and follow the [NMFS-wide GitHub and Git Best Practices](https://nmfs-opensci.github.io/GitHub-Guide/).
-
-
 # NEW USERS 
 
-Remember to review the [SEFSC GitHub SOP](https://github.com/AdyanRios-NOAA/SEFSC-Resources/blob/18a6c7e98b3e9b71f5e5912282d9d7f08c0e0a1a/SEFSC%20GitHub%20SOP%20and%20User%20Agreement%20Form/SEFSC%20Github%20SOP%20-%20RR%20-%20LON%20-%20BGM.pdf), create a GitHub account, and fill out and return the [SEFSC GitHub user agreements](https://github.com/AdyanRios-NOAA/SEFSC-Resources/blob/18a6c7e98b3e9b71f5e5912282d9d7f08c0e0a1a/SEFSC%20GitHub%20SOP%20and%20User%20Agreement%20Form/SEFSC_GitHub_User_Agreement.pdf) form to the SEFSC Helpdesk, nmfs.sefsc.helpdesk@noaa.gov. 
+Remember to review the [SEFSC GitHub SOP](https://github.com/AdyanRios-NOAA/SEFSC-Resources/blob/18a6c7e98b3e9b71f5e5912282d9d7f08c0e0a1a/SEFSC%20GitHub%20SOP%20and%20User%20Agreement%20Form/SEFSC%20Github%20SOP%20-%20RR%20-%20LON%20-%20BGM.pdf), create a GitHub account, and fill out and return the [SEFSC GitHub user agreements](https://github.com/AdyanRios-NOAA/SEFSC-Resources/blob/18a6c7e98b3e9b71f5e5912282d9d7f08c0e0a1a/SEFSC%20GitHub%20SOP%20and%20User%20Agreement%20Form/SEFSC_GitHub_User_Agreement.pdf) form through the OMI portal. 
+
+# GITHUB GOVERNANCE TEAM
+
+The [GitHub Governance Team (GGT)](https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/home) was established in 2023 to ensure appropriate governance for the NOAA Fisheries GitHub Enterprise Cloud. The GGT includes end-user and IT representatives from all Fiscal Management Centers (FMCs) who are using or planning on using the NOAA Fisheries GitHub Enterprise Cloud. The end-user representative for the SEFSC is Lisa Ailloud (Sarina Atkinson filling in January 2025-April 2025) and the IT representative is Shirley Kasser. See the NMFS GitHub Governance Team website (NOAA internal) for information on access to GitHub Enterprise Cloud and access to [training materials](https://sites.google.com/noaa.gov/nmfs-st-github-governance-team/training).
+
+Please see the [NMFS Open Science Organization](https://github.com/nmfs-opensci) for additional resources
 
 # DISCLAIMER
 
