@@ -2,9 +2,9 @@
 
 Welcome to the SEFSC GitHub! Here we will store living documents and information related to facilitating effective GitHub workflows at the SEFSC. 
 
-## NEW USERS 
+## NEW USERS
 
-Remember to review the [SEFSC GitHub SOP](https://github.com/SEFSC/SEFSC-Resources/blob/272ff15dd662f4b732621d4fd2c6a3b74f39cec9/SEFSC%20GitHub%20SOP%20and%20User%20Agreement%20Form/SEFSC%20Github%20SOP.pdf), create a GitHub account, and fill out and return the [SEFSC GitHub user agreements](https://github.com/SEFSC/SEFSC-Resources/blob/272ff15dd662f4b732621d4fd2c6a3b74f39cec9/SEFSC%20GitHub%20SOP%20and%20User%20Agreement%20Form/SEFSC_GitHub_User_Agreement.pdf) form through the OMI portal. 
+Remember to review the [SEFSC GitHub SOP](https://github.com/SEFSC/SEFSC-Resources/blob/main/SEFSC%20GitHub%20SOP.pdf), create a GitHub account, and fill out and return the [SEFSC GitHub user agreements](https://github.com/SEFSC/SEFSC-Resources/blob/272ff15dd662f4b732621d4fd2c6a3b74f39cec9/SEFSC%20GitHub%20SOP%20and%20User%20Agreement%20Form/SEFSC_GitHub_User_Agreement.pdf) form through the OMI portal. 
 
 ## GITHUB GOVERNANCE TEAM
 
