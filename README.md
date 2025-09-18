@@ -10,7 +10,7 @@ Instructions for gaining access to the SEFSC GitHub Enterprise Organization are 
 
 2. Work with your supervisor on completing the [SEFSC Github User Agreement](https://github.com/SEFSC/SEFSC-Resources/blob/272ff15dd662f4b732621d4fd2c6a3b74f39cec9/SEFSC%20GitHub%20SOP%20and%20User%20Agreement%20Form/SEFSC_GitHub_User_Agreement.pdf). *Note:* The user agreement must be digitally signed (using CAC) by yourself and your supervisor. 
 
-3. Once signed please submit a [GitHub Support ticket](https://apps-st.fisheries.noaa.gov/jirasm/servicedesk/customer/portal/3/create/317) and attach the user agreement to the ticket. Once the ticket is assigned our Information Systems Security Officer (ISSO) will review and/approve the request. Once approved one of the GitHub admins will send you an invite to join the SEFSC organization which must be accepted within 7 days.
+3. Once signed please submit a [GitHub Support ticket](https://apps-st.fisheries.noaa.gov/jira/servicedesk/customer/portal/10/group/58?groupId=58) and attach the user agreement to the ticket. Once the ticket is assigned our Information Systems Security Officer (ISSO) will review and/approve the request. Once approved one of the GitHub admins will send you an invite to join the SEFSC organization which must be accepted within 7 days.
 
 ## GITHUB GOVERNANCE TEAM
 
