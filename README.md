@@ -6,7 +6,7 @@ Welcome to the SEFSC GitHub! Here we will store living documents and information
 
 Instructions for gaining access to the SEFSC GitHub Enterprise Organization are outlined below.
 
-1. Review the [SEFSC Github Standard Operating Procedures (SOP)](https://github.com/SEFSC/SEFSC-Resources/blob/main/SEFSC%20GitHub%20SOP.pdf) to ensure that you understand the policies and guidelines for using the SEFSC repositories. The SOP will also instruct you on how to create a GitHub account (if not done already). 
+1. Review the [SEFSC Github Standard Operating Procedures (SOP)](https://github.com/SEFSC/SEFSC-Resources/blob/7707f5680a3850e8649b20a59840f3b322a70a39/SEFSC%20Github%20SOP.pdf) to ensure that you understand the policies and guidelines for using the SEFSC repositories. The SOP will also instruct you on how to create a GitHub account (if not done already). 
 
 2. Work with your supervisor on completing the [SEFSC Github User Agreement](https://github.com/SEFSC/SEFSC-Resources/blob/265d55748782c4e061cb3754cbc529bfd2445a2f/SEFSC_GitHub_User_Agreement.pdf). *Note:* The user agreement must be digitally signed (using CAC) by yourself and your supervisor. 
 
